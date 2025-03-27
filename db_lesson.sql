@@ -167,10 +167,12 @@ FROM
   departments d
 INNER JOIN
   people p
-  ON d.department_id = p.department_id
+  ON
+  d.department_id = p.department_id
 INNER JOIN
   reports r
-  ON p.person_id = r.person_id;
+  ON
+  p.person_id = r.person_id;
 
 
 Q11
@@ -179,6 +181,7 @@ SELECT
 FROM
   people p
 LEFT OUTER JOIN
-  reports r USING(person_id)
+  reports r
+  USING(person_id)
 WHERE
   r.person_id IS NULL;
