@@ -107,8 +107,10 @@ ORDER BY
   age
   DESC;
 
+
 Q6
 peopleテーブルの中から部署IDのカラムが１の人の名前とメールアドレスと年齢のレコードを取得してデータ作成日時が昇順になるように表示。
+
 
 Q7
 SELECT
@@ -169,6 +171,7 @@ INNER JOIN
 INNER JOIN
   reports r
   ON p.person_id = r.person_id;
+
 
 Q11
 SELECT
