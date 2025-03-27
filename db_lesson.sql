@@ -150,8 +150,7 @@ ORDER BY
 Q9
 SELECT
   AVG(age)
-  AS
-    average_age
+  AS average_age
 FROM
   people
 WHERE
